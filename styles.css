@@ -1,0 +1,885 @@
+/* CSS RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* TYPOGRAPHY AND UNIVERSAL CLASSES*/
+
+@font-face {
+	font-family: "eina03-regularuploaded_file";
+	src: url("./fonts/eina03-regular-webfont.woff2") format("woff2"),
+		url("./fonts/eina03-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.body {
+	font-size: min(12px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Bebas Neue", cursive;
+}
+
+h1 {
+	letter-spacing: -0.25vw;
+}
+
+h2 {
+	font-size: 6vw;
+	line-height: 6.125vw;
+	color: black;
+	letter-spacing: -0.2vw;
+}
+
+h3 {
+	font-size: 4vw;
+}
+
+h4 {
+	font-size: 2.125vw;
+	line-height: 5.5vw;
+}
+
+h5 {
+	font-size: 2vw;
+}
+
+h6 {
+	font-size: 16px;
+}
+.yellow {
+	background: #fbc843;
+}
+
+p {
+	font-family: "eina03-regularuploaded_file", sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.small {
+	font-size: 12px;
+	letter-spacing: 0.025625vw;
+}
+
+.bold {
+	font-weight: bold;
+}
+.car {
+	position: absolute;
+	bottom: 0;
+}
+
+/* LOADER RELATED */
+
+.loading {
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	overflow-x: hidden;
+}
+
+.loader {
+	margin: auto;
+	top: calc(50% - 60px);
+	left: calc(50% - 60px);
+	width: 120px;
+	height: 120px;
+	position: absolute;
+}
+
+.loader-circle {
+	position: absolute;
+	margin: 0 auto;
+}
+
+.loader-icon {
+	position: absolute;
+}
+
+/* STAGE-1 / HEADER */
+
+.stage {
+	position: relative;
+	margin-bottom: 100px;
+	width: 87.5vw;
+	margin: 0 auto 11.25vw;
+}
+
+.stage-1-left {
+	width: 60vw;
+	margin: 2.5vw 0 5vw 6vw;
+}
+
+.stage-1-phone {
+	margin: 6.78vw 11vw 0 0;
+	width: 21.3vw;
+	height: 45.625vw;
+}
+
+.logo-white {
+	margin-bottom: 7.5vw;
+	width: 15vw;
+}
+
+.stage-one-bg {
+	position: absolute;
+	height: 46.25vw;
+	width: 100%;
+	top: 0;
+	z-index: -5;
+}
+
+.A7-MY18 {
+	width: 26.625vw;
+}
+
+.stage-1-porsche {
+	width: 44.5vw;
+	left: 4.6875%;
+}
+
+.white-car {
+	width: 37.3vw;
+	left: 25%;
+	bottom: 2.6875vw;
+}
+
+header {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 15vw;
+}
+
+.drive-a-new {
+	line-height: 95%;
+	margin-bottom: 2.5vw;
+	font-size: 9vw;
+	color: white;
+}
+.available-arrow {
+	width: 100%;
+	display: flex;
+	margin-bottom: 14vw;
+}
+
+.arrow-text {
+	font-size: 14px;
+	margin-right: 5vw;
+	letter-spacing: -0.470588px;
+}
+
+.arrow {
+	width: 1.5vw;
+	cursor: pointer;
+}
+
+/* STAGE-2 */
+
+.two {
+	display: flex;
+	flex-direction: row;
+}
+
+.card-stats-container {
+	position: relative;
+	width: 32.75vw;
+	height: 41.25vw;
+	margin-bottom: 4.5vw;
+	margin-right: 10vw;
+}
+
+.arrows {
+	position: relative;
+
+	padding: 2.185vw 1.875vw 0 0;
+	text-align: end;
+	z-index: 5;
+}
+
+.arrow-left {
+	margin-right: 1.25vw;
+}
+
+.car-stats {
+	position: absolute;
+	width: 16.5vw;
+	padding: 7vw 8.125vw 12.5vw;
+}
+
+.porsche-stats {
+	opacity: 0;
+}
+
+.car-stat {
+	margin-bottom: 1vw;
+}
+
+.car-stat-image {
+	width: 3.625vw;
+
+	margin-right: 2vw;
+}
+
+.make {
+	line-height: 4.6875vw;
+}
+.model {
+	margin-bottom: 2vw;
+	color: #4b5168;
+}
+
+.car-stat {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.stage-2-right {
+	margin-top: 6vw;
+	width: 34.125vw;
+}
+
+.select-text {
+	width: 28.5vw;
+	line-height: 1.625vw + 0.5vh;
+}
+
+.stage-2-car {
+	position: absolute;
+	bottom: 0;
+}
+
+.porsche-2 {
+	width: 44.5625vw;
+	left: 6.75vw;
+	opacity: 0;
+}
+
+.range-rover-2 {
+	width: 44.877vw;
+	left: 5.625vw;
+}
+
+/* STAGE-3 */
+
+.three {
+	display: flex;
+	flex-direction: row;
+}
+
+.stage-3-left {
+	width: 28.25vw;
+	margin-right: 12.5vw;
+	margin-top: 11vw;
+}
+
+.delivered-text {
+	width: 21.125vw;
+}
+
+.stage-3-right {
+	position: relative;
+	width: 53.125vw;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.map {
+	position: absolute;
+	width: 53.125vw;
+
+	padding: 6.35vw 0;
+	z-index: -1;
+}
+
+.stage-3-porsche {
+	position: absolute;
+	width: 31.25vw;
+	bottom: 4vw;
+	left: 20.5vw;
+}
+
+.delivery-phone {
+	width: 20.6875vw;
+	height: 44.75vw;
+	margin-right: 9.55vw;
+}
+
+/* STAGE-4 */
+
+.four {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: calc (100vw - 12px);
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+
+.stage-4-left {
+	position: relative;
+	width: 36.25vw;
+	height: 51.4375vw;
+	margin-right: 14.875vw;
+	overflow: hidden;
+}
+
+.white-cover-4 {
+	position: absolute;
+	z-index: 2;
+	height: 51.4375vw;
+	width: 6.25vw;
+
+	background-color: white;
+}
+
+.stage-4-car {
+	position: absolute;
+	left: 6.25vw;
+	width: 30vw;
+	z-index: 0;
+}
+
+.stage-4-phone {
+	position: absolute;
+	width: 21.25vw;
+	height: 45.3125vw;
+	top: 3.25vw;
+	left: 18.25vw;
+}
+
+.stage-4-right {
+	width: 35vw;
+	margin-top: 17vw;
+}
+
+.trade-in-text {
+	width: 25vw;
+}
+
+/* STAGE-5 */
+
+.five {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.feature-squares {
+	position: relative;
+	background: #f4f4f5;
+	width: 28.3125vw;
+	height: 28.3125vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.feature-square-image {
+	position: relative;
+	background: #f4f4f5;
+	width: 7.5vw;
+	height: 9.4375vw;
+	margin-bottom: 0.75vw;
+}
+
+.pricing-text {
+	width: 16.25vw;
+	letter-spacing: -0.16px;
+}
+
+.insurance-text {
+	width: 19.125vw;
+	letter-spacing: -0.16px;
+}
+
+.maintenance-text {
+	width: 16.625vw;
+	letter-spacing: -0.16px;
+}
+
+/* STAGE-6*/
+
+.six {
+	display: flex;
+	flex-direction: row;
+	height: 52.75vw;
+	margin: 0 auto 6vw;
+}
+
+.customer-img {
+	width: 27.3125vw;
+	height: 38.5625vw;
+	position: absolute;
+	bottom: 0;
+	left: 5vw;
+}
+.stage-6-left {
+	position: relative;
+	width: 39.8125vw;
+	height: 45.125vw;
+	margin-right: 6.125vw;
+	overflow: hidden;
+}
+
+.stage-6-car {
+	width: 57vw;
+	position: absolute;
+	left: 11.25vw;
+}
+.stage-6-info {
+	width: 38vw;
+	margin-top: 5vw;
+}
+.white-cover-6 {
+	position: absolute;
+	z-index: 2;
+	height: 45.125vw;
+	width: 6.25vw;
+	left: -6.25vw;
+	background-color: white;
+}
+
+.testimonial {
+	width: 24.8125vw;
+
+	margin: 2.25vw 0 1.25vw;
+}
+
+footer {
+	width: 87.5vw;
+	margin: 0 auto;
+	border-top: solid 1px #f4f4f5;
+	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2vw 0 6.5vw 0;
+}
+
+.footer-links {
+	display: flex;
+}
+
+.footer-links p {
+	margin: 0 0 0 4vw;
+}
+
+.header {
+	text-align: center;
+}
+.div-line-4 {
+	width: 100%;
+	height: 4px;
+	margin: 2.5vw 0 4.375vw;
+
+	background: #f4f4f5;
+}
+
+.logo-black {
+	width: 15vw;
+}
+
+@media screen and (max-width: 1000px) {
+	p {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.small {
+		font-size: 10px;
+	}
+	.arrow-text {
+		font-size: 12px;
+	}
+	h6 {
+		font-size: 12px;
+	}
+	.div-line-4 {
+		width: 100%;
+		height: 4px;
+		margin: 2.5vw 0 2vw;
+
+		background: #f4f4f5;
+	}
+	.model {
+		margin-bottom: 2vw;
+		color: #4b5168;
+	}
+	.stage-1-left {
+		margin: 2.5vw 0 5vw 6vw;
+	}
+	.testimonial {
+		width: 35vw;
+	}
+	.select-text {
+		width: 35vw;
+		line-height: 1.625vw + 0.5vh;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	h2 {
+		font-size: 10.87vw;
+		line-height: 10.9vw;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 26px;
+		letter-spacing: -0.47px;
+	}
+
+	/* Header */
+
+	header {
+		overflow-x: hidden;
+	}
+	.stage-1-phone {
+		display: none;
+	}
+
+	.stage-1-left {
+		width: 100%;
+		padding-bottom: 10vw;
+	}
+
+	.arrow-text {
+		font-size: 16px;
+		margin-right: 14vw;
+	}
+
+	.drive-a-new {
+		width: 100%;
+		font-size: 13.52vw;
+		line-height: 13vw;
+		letter-spacing: -1.5px;
+	}
+	.logo-white {
+		margin-top: 11vw;
+		margin-bottom: 9.6vw;
+		width: 54vw;
+	}
+
+	.A7-MY18 {
+		width: 54.3vw;
+	}
+
+	.stage-1-porsche {
+		width: 68vw;
+		left: 16vw;
+	}
+
+	.white-car {
+		width: 57.7vw;
+		right: -6vw;
+		left: initial;
+		bottom: 2.6875vw;
+	}
+
+	.stage-one-bg {
+		height: 82.125vw;
+	}
+
+	.stage-2-right {
+		width: 100%;
+	}
+	.select-text {
+		width: 100%;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.two {
+		flex-direction: column-reverse;
+	}
+	.card-stats-container {
+		width: 87.5vw;
+
+		height: 82.125vw;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		margin: 10vw auto 0;
+	}
+
+	.car-stats {
+		padding: 0 0 0 32px;
+		top: 32px;
+		width: initial;
+	}
+	.car-stat-image {
+		width: 50px;
+		margin-right: 32px;
+	}
+	.make {
+		font-size: 9.6vw;
+		line-height: 46.88px;
+		width: 100%;
+	}
+	.model {
+		font-size: 16px;
+	}
+	.porsche-2 {
+		width: 87.5vw;
+		left: 0;
+		bottom: -18vw;
+	}
+	.range-rover-2 {
+		width: 87.5vw;
+		left: 0;
+		bottom: -18vw;
+	}
+
+	h5 {
+		font-size: 32px;
+	}
+	.arrows {
+		position: absolute;
+		right: 5.8vw;
+		top: 9vw;
+	}
+	.arrow {
+		width: 6.5vw;
+	}
+
+	.arrow-left {
+		margin-right: 4vw;
+	}
+
+	.three {
+		flex-direction: column;
+		width: 100vw;
+	}
+	.stage-3-left {
+		width: 87.5vw;
+		margin: 27.5vw auto 0;
+	}
+	.map {
+		width: 100vw;
+		padding: 20vw 0;
+	}
+	.stage-3-right {
+		margin: 15vw 0 27.5vw 0;
+		width: initial;
+	}
+	.delivered-text {
+		width: 100%;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.delivery-phone {
+		height: 103.86vw;
+		width: 48vw;
+		margin: 0 auto;
+	}
+	.stage-3-porsche {
+		display: none;
+	}
+	.stage-4-left {
+		width: 74.275vw;
+		height: 125.12vw;
+	}
+	.trade-in-text {
+		width: 100%;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.stage-4-right {
+		width: 87.5vw;
+		margin: 0 auto;
+	}
+	.stage-4-car {
+		width: 100%;
+	}
+	.stage-4-phone {
+		top: initial;
+		bottom: 6.8vw;
+		width: 51.5vw;
+		height: 110.6vw;
+		right: 6.52vw;
+		left: initial;
+	}
+
+	.four {
+		flex-direction: column-reverse;
+		width: 100vw;
+	}
+	.five {
+		flex-direction: column;
+	}
+	.feature-squares {
+		width: 87.5vw;
+		height: 87.5vw;
+		margin-bottom: 10px;
+	}
+	.feature-square-image {
+		width: 28.95vw;
+		height: 36.42vw;
+		margin-bottom: 0.75vw;
+	}
+	.insurance-text {
+		width: 74vw;
+	}
+	.pricing-text {
+		width: 62.56vw;
+	}
+	.maintenance-text {
+		width: 64.25vw;
+	}
+
+	.header {
+		font-size: 8.212vw;
+		line-height: 21.25vw;
+	}
+	.small {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.six {
+		flex-direction: column-reverse;
+		height: initial;
+		width: 100vw;
+	}
+	.new-car-smell {
+		width: 90%;
+	}
+	.div-line-4 {
+		margin: 5vw auto;
+	}
+	.stage-6-info {
+		width: 87.5vw;
+		margin: 0 auto;
+	}
+	.testimonial {
+		width: 90%;
+	}
+	.stage-6-car {
+		display: none;
+	}
+	.stage-6-left {
+		width: 100vw;
+		height: 113.285vw;
+
+		margin: 0;
+	}
+
+	.customer-img {
+		width: 68.6vw;
+		height: 96.6vw;
+		left: 12vw;
+	}
+	.footer-links {
+		display: none;
+	}
+	.logo-black {
+		width: 38vw;
+	}
+	footer {
+		width: 87.5vw;
+		margin: 12vw 6.25vw 0;
+		padding: 8vw 0;
+	}
+}
